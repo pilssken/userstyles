@@ -1,0 +1,176 @@
+@-moz-document domain("pillowfort.social") {
+body {
+color:#ccc!important;
+text-transform:lowercase!important;
+background-color:#080808!important; }
+
+p { margin-bottom:10px!important; }
+
+ul,ol { margin-left:-15px!important; }
+ul { list-style-type:square!important; }
+li { padding-left:10px!important; }
+
+hr { border-top:1px solid #222!important; }
+
+.btn-default {
+color:#aaa;
+background:#111!important;
+border:0!important; }
+
+.btn-info {
+background:#111!important;
+border:0!important; }
+
+/*### BLOG PAGES ###*/
+
+.user-sidebar .title { padding:15px!important; }
+.user-sidebar .util-buttons { margin-bottom:10px!important; }
+.user-sidebar .util-buttons span { margin-left:5px!important; }
+.user-sidebar .util-buttons span:last-child { margin-left:0!important; }
+.user-sidebar .separator { display:none!important; }
+
+/*### TOP BAR ###*/
+
+.navbar-fixed-top {
+border:0!important; }
+
+.navbar-text {
+text-transform:lowercase!important;
+border:0!important; }
+
+.nav-logout {
+padding-right:20px!important;
+border:0!important; }
+
+/*### SIDEBAR ###*/
+
+.sidebar {
+background-color:#1a1a1a!important;
+border:0!important; }
+
+.sidebar-header,
+.sidebar-toggle-indicator,
+.sidebar-row {
+border:0!important; }
+
+.first-row { margin-top:3px!important; }
+.sidebar-icon { border-color:transparent; }
+
+/*### MAIN CONTENT ###*/
+
+/* posts */
+
+.main {
+background-color:#1a1a1a!important;
+border:0!important;
+border-radius:5px!important; }
+
+/* post header + title */
+.post .header { border-radius:5px!important; }
+.post .title { padding-left:0!important; ;}
+.post .post-perma-link a { color:#888!important; }
+
+/* post content */
+
+.post .content {
+padding:5px 10px 10px 10px!important;
+border:0!important; }
+
+.post .content p:last-child { margin-bottom:0!important; }
+.post .content img { max-width:100%!important; }
+.post .media { border:0!important; }
+
+/* post info */
+
+.avatar img {
+padding:4px!important;
+background-color:#1a1a1a!important;
+border:0!important;
+border-radius:5px!important; }
+
+/* timestamp */ .side-info .timestamp { background-color:transparent!important; }
+
+/* last edited */
+.post .last-edited-home-page,
+.post .last-edited-single-post {
+display:none!important;
+color:#999!important;
+text-align:left!important;
+text-transform:lowercase!important; }
+
+.reblogs-popup { color:#999!important; }
+
+/* post tags */
+.post .tags {
+padding:5px 10px 10px 10px!important;
+color:#1a1a1a!important;
+text-transform:none!important;
+border:0!important; }
+
+.post .tags span:first-child {
+display:none!important;
+margin-right:5px!important; }
+
+/* adds hashtag to tags */
+.post .tags span a:before { content:"#"; }
+
+/* changes the size of the post control icons */
+.post .post-nav .fa,
+.post .post-nav .glyphicon {
+font-size:16px!important; }
+
+.post .post-nav .nav-tab {
+height:auto!important;
+width:auto!important;
+padding:10px!important;
+border:0!important;
+background:transparent!important; }
+
+/* removes note counts */
+.post .post-nav .nav-tab .ng-binding { display:none!important; }
+
+/* permalink tabs */
+
+#single-post-nav-tabs .nav-tabs {
+width:100%!important;
+border:0!important; }
+
+.nav-tabs > li > a {
+border:0!important;
+border-radius:0!important; }
+
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:hover,
+.nav-tabs > li.active > a:focus {
+border:0!important; }
+
+#single-post-nav-tabs li.active > a {
+color:#ccc!important;
+background:#222!important; }
+
+/*### NEW POST PAGE ###*/
+
+input[type="text"] {
+background:#111!important;
+border:0!important; }
+
+.new-post #title, .edit-post #title {
+padding:5px 10px!important;
+margin-bottom:0!important; }
+
+.custom-theme .fr-toolbar {
+background:#111!important;
+border:0!important; }
+
+.fr-separator {
+display:none!important;
+background:#333!important; }
+
+.custom-theme.fr-box.fr-basic .fr-wrapper { margin-top:2px!important; background:#111!important; }
+.custom-theme.fr-box.fr-basic .fr-element { color:#fff!important; border:0!important; }
+
+/*### POPUPS ###*/
+
+.modal-content { background:#1a1a1a!important; }
+
+.modal-header, .modal-footer { border:0!important; }
