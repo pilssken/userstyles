@@ -1,11 +1,13 @@
-@-moz-document domain("pillowfort.social") {
-/*
+/* ==UserStyle==
 @name         pillowfort.social
 @homepageURL  https://pilssken.neocities.org/warez/userstyles/
+@updateURL    https://raw.githubusercontent.com/pilssken/userstyles/master/pillowfort.css
 @license      unlicense
 @description  custom look for pillowfort.social. customize to your liking.
 @author       pilssken
-*/
+==/UserStyle== */
+
+@-moz-document domain("pillowfort.social") {
 
 body {
 color:#ccc!important;
@@ -182,3 +184,5 @@ background:#333!important; }
 .modal-content { background:#1a1a1a!important; }
 
 .modal-header, .modal-footer { border:0!important; }
+
+}
