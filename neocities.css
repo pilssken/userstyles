@@ -1,0 +1,89 @@
+/* ==UserStyle==
+@name         pillowfort.social
+@homepageURL  https://pilssken.neocities.org/warez/userstyles/
+@updateURL    https://raw.githubusercontent.com/pilssken/userstyles/master/neocities.css
+@license      unlicense
+@description  custom look for neocities.org. customize to your liking.
+@author       pilssken
+==/UserStyle== */
+
+@-moz-document domain("neocities.org") {
+
+body { background:#111!important; }
+
+/* header */
+
+.header-Base { background:#1D282E!important; }
+.header-Nav { border:0!important; background:#1D282E!important; }
+.header-Outro { background:#2E3F47!important; }
+
+/* news feed */
+
+.page,
+.content.misc-page,
+.content-Base,
+.misc-page.footer-Content {
+color:#ccc!important;
+background:#111!important; }
+
+.content.misc-page.columns .col-66,
+.misc-page.columns.footer-Content .col-66 {
+background:#1a1a1a!important; }
+
+.col-left,
+.interior .header-Outro.with-columns .col-66 {
+border-color:transparent!important; }
+
+.post-comment { background:transparent!important; }
+
+.news-item { border:0!important; }
+.news-item .user { color:#fff!important; }
+.news-item .date a { color:#555!important; }
+.news-item .comment { color:#ccc!important; }
+.news-item .files { background:transparent!important; }
+
+/* sidebar */
+
+.large-portrait { border-color:#1a1a1a!important; }
+
+a.tag,
+a.tag:visited {
+padding:2px 5px!important;
+background:#1a1a1a!important; }
+
+/* site edit */
+
+.files { background:#1a1a1a!important; }
+
+.files .list .upload-Boundary { border:0!important; }
+
+.files.list-view .list .file:nth-child(2n) { background:#222!important; }
+
+/* input boxes */
+
+textarea,
+input[type="text"],
+input[type="password"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="date"],
+input[type="month"],
+input[type="time"],
+input[type="week"],
+input[type="number"],
+input[type="email"],
+input[type="url"],
+input[type="search"],
+input[type="tel"],
+input[type="color"],
+.uneditable-input {
+color:#999;
+background:#222!important;
+border-color:transparent!important; }
+
+/* footer */
+
+.footer-Outro {
+background:#1a1a1a!important;
+border:0!important; }
+}
