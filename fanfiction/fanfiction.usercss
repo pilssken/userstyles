@@ -1,0 +1,45 @@
+body {
+font-family:'Open Sans',sans-serif!important;
+font-size:16px!important;
+line-height:1.7!important;
+color:#ccc!important;
+background:#111!important; }
+
+a { color:#ddd!important; }
+
+textarea, input[type="text"], input[type="password"], input[type="datetime"], input[type="datetime-local"], input[type="date"], input[type="month"], input[type="time"], input[type="week"], input[type="number"], input[type="email"], input[type="url"], input[type="search"], input[type="tel"], input[type="color"], .uneditable-input {
+background:#333!important;
+border-color:transparent!important; }
+
+/* containers */
+
+div.zmenu { background:transparent!important; border-color:transparent!important; }
+.zui a { padding:0!important; }
+b.caret { border-color:transparent!important; }
+ul.dropdown-menu { padding:0!important; min-width:125px!important; background:#222!important; border-color:#222!important; }
+ul.dropdown-menu > li { margin:5px 0!important; }
+ul.dropdown-menu > li > a { padding:0 5px!important; }
+ul.dropdown-menu > li.disabled { margin:5px 0!important; }
+ul.dropdown-menu > li.divider { margin:9px 0!important; background:#333!important; border-color:transparent!important; }
+
+div#content_wrapper, div#content_wrapper_inner { padding:0!important; background:transparent!important; border-color:transparent!important; }
+
+div.modal { background:#222!important; border-color:transparent!important; }
+div.modal-footer { background:#222!important; border-color:#333!important; }
+div.modal-header { border-color:#333!important; }
+button.btn-group.open, button.btn.dropdown-toggle { color:#ccc!important; text-shadow:none!important; background:#333!important; border-color:transparent!important; }
+
+div.table-bordered { border-color:#222!important; }
+div.tcat { background:#222!important; border-color:#222!important; }
+
+div.lc-wrapper { display:none!important; }
+div#storytext, div#storytextp, div.storytextp, div.storytext {
+margin:0 auto!important;
+width:750px!important;
+font-family:'Open Sans',sans-serif!important;
+font-size:16px!important;
+line-height:1.9!important;
+text-align:justify!important; }
+
+/* removes the tweet box on the homepage and the review form cuz i dont give a shit */
+div#content_wrapper_inner > table > tbody > tr > td:nth-of-type(1), div#content_wrapper_inner > table > tbody > tr > td:nth-of-type(2), div.timeline-Widget, #review { display:none!important; }
