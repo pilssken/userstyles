@@ -1,10 +1,11 @@
 /* ==UserStyle==
-@name         pillowfort.social
-@homepageURL  https://pilssken.neocities.org/warez/userstyles/
-@updateURL    https://raw.githubusercontent.com/pilssken/userstyles/master/pillowfort.css
-@license      unlicense
-@description  custom look for pillowfort.social. customize to your liking.
-@author       pilssken
+@name        pillowfort.social
+@namespace   pilssken
+@version     1.0
+@homepageURL https://github.com/pilssken/userstyles/
+@updateURL   https://raw.githubusercontent.com/pilssken/userstyles/master/pillowfort/pillowfort.user.css
+@license     Unlicense
+@author      pilssken
 ==/UserStyle== */
 
 @-moz-document domain("pillowfort.social") {
