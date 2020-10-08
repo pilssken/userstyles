@@ -8,6 +8,8 @@
 @author      pilssken
 ==/UserStyle== */
 
+@-moz-document domain("fanfiction.net") {
+
 body {
 font-family:'Open Sans',sans-serif!important;
 font-size:16px!important;
@@ -53,3 +55,5 @@ text-align:justify!important; }
 
 /* removes the tweet box on the homepage and the review form cuz i dont give a shit */
 div#content_wrapper_inner > table > tbody > tr > td:nth-of-type(1), div#content_wrapper_inner > table > tbody > tr > td:nth-of-type(2), div.timeline-Widget, #review { display:none!important; }
+
+}
