@@ -1,3 +1,11 @@
+/* ==UserStyle==
+@name        fanfiction.net
+@author      pilssken
+@homepageURL https://github.com/pilssken/userstyles/
+@updateURL   https://raw.githubusercontent.com/pilssken/userstyles/master/fanfiction/fanfiction.user.css
+@license     Unlicense
+==/UserStyle== */
+
 body {
 font-family:'Open Sans',sans-serif!important;
 font-size:16px!important;
