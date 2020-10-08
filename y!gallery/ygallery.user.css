@@ -1,0 +1,54 @@
+/* ==UserStyle==
+@name        old.y-gallery.net
+@namespace   pilssken
+@version     1.0
+@homepageURL https://github.com/pilssken/userstyles/
+@updateURL   https://raw.githubusercontent.com/pilssken/userstyles/master/y!gallery/ygallery.user.css
+@license     Unlicense
+@author      pilssken
+==/UserStyle== */
+
+@-moz-document domain("old.y-gallery.net") {
+ 
+body {
+color:#ddd!important;
+background:#111!important; }
+
+a { color:#d48fff; }
+
+/* HEADER */
+
+.ui2-top, .ui2-layout-bg { background-color:#111!important; }
+.layout_top { background:url('https://ghcdn.rawgit.org/pilssken/userstyles/master/y!gallery/ygal.jpg') top left no-repeat #222!important; }
+
+/* TABS */
+
+div.header div.tab {
+background:#2a2a2a!important;
+border-color:transparent!important; }
+
+div.header div.tab_active {
+background:#333!important;
+border-color:transparent!important; }
+
+/* CONTAINER */
+
+div.outer, div.pollbarvoted { background:#222!important; }
+div.container { background:#333!important; }
+
+/* MAIN PAGE */
+
+div.header { padding-bottom:5px!important; }
+
+/* SETTINGS */
+
+div.sep { margin-bottom:5px!important; }
+div.container2 { background:#222!important; }
+
+/* GENERIC ELEMENTS */
+
+div.tab, button, div.button, span.button, input, select, textarea {
+background:#191919!important;
+border-color:transparent!important; }
+
+}
