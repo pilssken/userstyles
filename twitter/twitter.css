@@ -1,1 +1,114 @@
-soon
+/* root */
+:root {
+--text:#e8e9bd;
+--bg:#0b0b09; }
+
+/* removes borders */
+*:not(.r-1xl5njo) { border-color:transparent!important; }
+.r-tbmifm { display:none!important; }
+
+/* removes round corners */
+.r-sdzlij {
+border-bottom-left-radius:4px!important;
+border-bottom-right-radius:4px!important;
+border-top-left-radius:4px!important;
+border-top-right-radius:4px!important; }
+
+/* custom colors */
+html, .r-kemksi { background-color:var(--bg)!important; }
+body { background-color:transparent!important; }
+.r-hkyrab { color:var(--text); }
+.r-1xc7w19 { border-color:var(--bg); }
+.r-daml9f:hover { color:var(--text); }
+
+/* font size */
+.css-901oao { font-size:15px; }
+.r-qvutc0.r-1udh08x.r-bcqeeo.r-135wba7.r-1vr29t4.r-adyw6z.r-1qd0xha.r-1fmj7o5.css-901oao > span.r-qvutc0.r-bcqeeo.r-poiln3.css-16my406.css-901oao > .r-qvutc0.r-bcqeeo.r-poiln3.css-16my406.css-901oao { font-size:150%!important; }
+
+/* line height */
+.r-rjixqe { line-height:1.5; }
+
+/* main pane size */
+.r-1ye8kvj { max-width:800px!important; }
+
+/* margin above profile name */
+.css-1dbjc4n.r-6gpygo.r-14gqq1x { margin-top:15px!important; }
+
+/* margin below "x retweeted" */
+.r-15zivkp { text-transform:lowercase!important; margin-bottom:10px!important; }
+
+/* remove explore, lists, + moments tab */
+.r-1habvwh.css-1dbjc4n.css-4rbku5:nth-of-type(2), .r-1habvwh.css-1dbjc4n.css-4rbku5:nth-of-type(6), #global-actions .moments { display:none!important; }
+
+/* remove who to follow */
+div[aria-label="Timeline: Your Home Timeline"] .r-1adg3ll > .r-1wtj0ep.r-ymttw5.r-1f1sjgu,
+div[aria-label$="’s Tweets"] .r-1adg3ll > .r-1wtj0ep.r-ymttw5.r-1f1sjgu,
+div[aria-label="Timeline: Your Home Timeline"] .r-1adg3ll > div[data-testid="UserCell"],
+div[aria-label$="’s Tweets"] .r-1adg3ll > div[data-testid="UserCell"],
+div[aria-label="Timeline: Your Home Timeline"] .r-1adg3ll > a[href^="/i/connect_people"],
+div[aria-label$="’s Tweets"] .r-1adg3ll > a[href^="/i/connect_people"],
+div[aria-label="Timeline: Your Home Timeline"] div:not([class]) > .r-1adg3ll > .r-1ysxnx4.r-rull8r.r-tbmifm,
+div[aria-label$="’s Tweets"] div:not([class]):not(:nth-of-type(2)) > .r-1adg3ll > .r-1ysxnx4.r-rull8r.r-tbmifm { display:none!important; }
+
+/* remove topics */
+.css-1dbjc4n.r-eqz5dr.r-1oy2gb8.r-zg41ew { display:none!important; }
+
+/* remove likes */
+.tweet:not([data-retweeter]) .context { display:none!important; }
+
+/* remove suggested tweets */
+div[data-component-context="suggest_activity_tweet"], div[data-component-context="suggest_sc_tweet"], div[data-component-context="suggest_pyle_tweet"] { display:none!important }
+
+/* removes user retweeted icons
+.css-1dbjc4n.r-obd0qt.r-1hwvwag.r-18kxxzh.r-1777fci.r-15zivkp.r-1b7u577 svg { display:none!important; } */
+
+/* removes join date */
+span.r-qvutc0.r-bcqeeo.r-1b7u577.r-poiln3.r-4qtqp9.r-9ilb82.css-16my406.css-901oao:nth-of-type(3) { display:none!important; }
+
+/* remove like + retweet counts
+[data-testid="retweet"] span { display:none!important; }
+[data-testid="unretweet"] span { display:none!important; }
+[data-testid="like"] span { display:none!important; }
+[data-testid="unlike"] span { display:none!important; } */
+
+/* uncrop images */
+
+a.css-4rbku5 { justify-content:center!important; }
+
+a.css-4rbku5 > .r-1adg3ll .r-13qz1uu,
+a.css-4rbku5 > .r-1adg3ll .r-13qz1uu .r-u8s1d,
+a.css-4rbku5 > .r-1adg3ll .css-9pa8cd {
+position:relative!important;
+margin:auto!important;
+padding-bottom:0!important;
+width:100%;
+max-width:100%;
+height:auto!important;
+max-height:90vh!important;
+background-size:contain!important;
+object-fit:contain!important; }
+
+a.css-4rbku5 .r-1adg3ll .r-13qz1uu [style*="background-image: url"] {
+position:absolute!important;
+width:100%;
+max-width:100%;
+min-height:100%;
+margin:auto!important;
+background-size:cover!important; }
+
+/* bg = header image */
+
+[class="css-1dbjc4n r-1p0dtai r-1mlwlqe r-1d2f490 r-1udh08x r-u8s1d r-zchlnj r-ipm5af r-417010"] > .css-1dbjc4n.r-1niwhzg.r-vvn4in.r-u6sd8q.r-4gszlv.r-1p0dtai.r-1pi2tsx.r-1d2f490.r-u8s1d.r-zchlnj.r-ipm5af.r-13qz1uu.r-1wyyakw[style*="https://pbs.twimg.com/profile_banners"] {
+position:fixed!important;
+top:0;
+left:0;
+width:100vw!important;
+height:100vh!important;
+opacity:.1!important;
+z-index:-99999;
+pointer-events:none;
+filter:blur(10px);
+object-fit:cover;
+background-size:cover!important; }
+
+a.css-4rbku5 > .r-1adg3ll .css-9pa8cd { opacity:1; }
