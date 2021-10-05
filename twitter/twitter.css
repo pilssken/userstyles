@@ -1,11 +1,22 @@
 /* root */
-:root {
---text:#e8e9bd;
---bg:#0b0b09; }
+:root { --bg:#0b0b09; }
+
+/* custom background color */
+html, .r-kemksi { background-color:var(--bg)!important; }
+body { background-color:transparent!important; }
+.r-1xc7w19 { border-color:var(--bg); }
+
+/* font
+html, body, .css-901oao, .css-4rbku5, .r-poiln3, .r-rjixqe, .r-1qd0xha { font-family:'M Plus 1'!important; }
+.r-a023e6 { font-size:14px!important; }　*/
+.r-adyw6z { font-size:14px!important; }
+
+/* line height */
+.r-rjixqe { line-height:1.5; }
 
 /* removes borders */
-*:not(.r-1xl5njo) { border-color:transparent!important; }
-.r-tbmifm { display:none!important; }
+*:not(.r-1xl5njo):not(.r-6t5ypu) { border-color:transparent!important; border-bottom:0!important; }
+.r-tbmifm, .css-1dbjc4n.r-gu4em3.r-109y4c4.r-1p6iasa { display:none!important; }
 
 /* removes round corners */
 .r-sdzlij {
@@ -14,31 +25,35 @@ border-bottom-right-radius:4px!important;
 border-top-left-radius:4px!important;
 border-top-right-radius:4px!important; }
 
-/* custom colors */
-html, .r-kemksi { background-color:var(--bg)!important; }
-body { background-color:transparent!important; }
-.r-hkyrab { color:var(--text); }
-.r-1xc7w19 { border-color:var(--bg); }
-.r-daml9f:hover { color:var(--text); }
+/* remove timeline tweet box */
+.css-1dbjc4n.r-kemksi.r-184en5c > .css-1dbjc4n.r-iphfwy { display:none!important; }
 
-/* font size */
-.css-901oao { font-size:15px; }
-.r-qvutc0.r-1udh08x.r-bcqeeo.r-135wba7.r-1vr29t4.r-adyw6z.r-1qd0xha.r-1fmj7o5.css-901oao > span.r-qvutc0.r-bcqeeo.r-poiln3.css-16my406.css-901oao > .r-qvutc0.r-bcqeeo.r-poiln3.css-16my406.css-901oao { font-size:150%!important; }
-
-/* line height */
-.r-rjixqe { line-height:1.5; }
-
-/* main pane size */
-.r-1ye8kvj { max-width:800px!important; }
-
-/* margin above profile name */
-.css-1dbjc4n.r-6gpygo.r-14gqq1x { margin-top:15px!important; }
-
-/* margin below "x retweeted" */
-.r-15zivkp { text-transform:lowercase!important; margin-bottom:10px!important; }
-
-/* remove explore, lists, + moments tab */
+/* remove explore, lists, + moments sidebar link */
 .r-1habvwh.css-1dbjc4n.css-4rbku5:nth-of-type(2), .r-1habvwh.css-1dbjc4n.css-4rbku5:nth-of-type(6), #global-actions .moments { display:none!important; }
+
+/* remove right sidebar */
+[data-testid="sidebarColumn"] { display:none!important; }
+
+/* remove message box */
+div[data-testid="DMDrawer"] { display:none!important; }
+
+/* remove follower count */
+[href$="/followers"] { display:none!important; }
+
+/* remove like count */
+[data-testid="like"] span, [data-testid="unlike"] span { display:none!important; }
+
+/* remove retweet count */
+[data-testid="retweet"] span, [data-testid="unretweet"] span, [href$="/retweets"], [href$="retweets/with_comments"] { display:none!important; }
+
+/* remove replies count */
+[data-testid="reply"] span { display:none!important; }
+
+/* remove analytics button */
+[href$="/analytics"] { display:none!important; }
+
+/* removes join date */
+span.r-qvutc0.r-bcqeeo.r-1b7u577.r-poiln3.r-4qtqp9.r-9ilb82.css-16my406.css-901oao:nth-of-type(3) { display:none!important; }
 
 /* remove who to follow */
 div[aria-label="Timeline: Your Home Timeline"] .r-1adg3ll > .r-1wtj0ep.r-ymttw5.r-1f1sjgu,
@@ -49,27 +64,59 @@ div[aria-label="Timeline: Your Home Timeline"] .r-1adg3ll > a[href^="/i/connect_
 div[aria-label$="’s Tweets"] .r-1adg3ll > a[href^="/i/connect_people"],
 div[aria-label="Timeline: Your Home Timeline"] div:not([class]) > .r-1adg3ll > .r-1ysxnx4.r-rull8r.r-tbmifm,
 div[aria-label$="’s Tweets"] div:not([class]):not(:nth-of-type(2)) > .r-1adg3ll > .r-1ysxnx4.r-rull8r.r-tbmifm { display:none!important; }
-
-/* remove topics */
-.css-1dbjc4n.r-eqz5dr.r-1oy2gb8.r-zg41ew { display:none!important; }
-
-/* remove likes */
-.tweet:not([data-retweeter]) .context { display:none!important; }
+main [data-testid="primaryColumn"] h1[aria-level="1"] + div [style*="position: absolute; width: 100%; transform: translateY("] {
+  .css-1dbjc4n > [data-testid="placementTracking"], // Adverts
+  .r-1wtj0ep.r-1f1sjgu,                   // Headings
+  [data-testid="UserCell"],               // Users
+  [aria-labelledby*="accessible-list-"],  // Topics to follow
+  [href*="/i/c"],                         // Show More
+  .r-1p6iasa.r-109y4c4                    // Spacers
+{ display:none!important; opacity:.5;     // Testing } }
 
 /* remove suggested tweets */
 div[data-component-context="suggest_activity_tweet"], div[data-component-context="suggest_sc_tweet"], div[data-component-context="suggest_pyle_tweet"] { display:none!important }
 
-/* removes user retweeted icons
-.css-1dbjc4n.r-obd0qt.r-1hwvwag.r-18kxxzh.r-1777fci.r-15zivkp.r-1b7u577 svg { display:none!important; } */
+/* remove topics and more suggested tweet shit */
+[aria-label^="Timeline"][aria-label$="s Tweets"] h2,
+[aria-label^="Timeline"][aria-label$="s Tweets"] [data-testid="UserCell"],
+[aria-label^="Timeline"][aria-label$="s Tweets"] [href^="/i/connect_people?user_id="],
+[aria-label^="Timeline"][aria-label$="s Tweets"] > div > div > div section[aria-labelledby^="accessible-list-"][role="region"],
+[aria-label^="Timeline"][aria-label$="s Tweets"] > div > div > div > div > div[dir="auto"][style="-webkit-line-clamp: 2;"] > span,
+a[href="/i/flow/topics_selector"][role="link"],
+a[href="/i/topics/picker/home"][role="link"]
+{ display:none!important; }
 
-/* removes join date */
-span.r-qvutc0.r-bcqeeo.r-1b7u577.r-poiln3.r-4qtqp9.r-9ilb82.css-16my406.css-901oao:nth-of-type(3) { display:none!important; }
+[aria-label^="Timeline"][aria-label$="s Tweets"] > div > div > div > div { padding-bottom:0; padding-top:0; }
 
-/* remove like + retweet counts
-[data-testid="retweet"] span { display:none!important; }
-[data-testid="unretweet"] span { display:none!important; }
-[data-testid="like"] span { display:none!important; }
-[data-testid="unlike"] span { display:none!important; } */
+/* main pane size */
+.r-1ye8kvj { max-width:700px!important; }
+main[role="main"] { align-items:center!important; }
+main[role="main"] > div > div > div { justify-content:center!important; }
+
+/* margin between tweets */
+[data-testid="tweet"] { margin:0 0 10px 0; }
+
+/* margin above profile name */
+.css-1dbjc4n.r-6gpygo.r-14gqq1x { margin-top:15px!important; }
+/* margin below tweet author name */
+.r-zl2h9q { margin-bottom:5px; }
+
+/* margin below "x retweeted" */
+.r-15zivkp { text-transform:lowercase!important; margin-bottom:10px!important; }
+
+/* minimal navigation sidebar */
+
+header[role="banner"] { align-items:start!important; max-width:100px!important; }
+header[role="banner"] > div > div > div { justify-content:space-evenly; padding-top:6px; }
+nav[aria-label="Primary"][role="navigation"] > a > div > div:nth-child(2), nav[aria-label="Primary"][role="navigation"] > div > div > div:nth-child(2) { opacity:0!important; transition:0.5s cubic-bezier(0.2, 0.8, 0.2, 1); }
+nav[aria-label="Primary"][role="navigation"]:hover > a > div > div:nth-child(2), nav[aria-label="Primary"][role="navigation"]:hover > div > div > div:nth-child(2) { opacity:1!important; }
+
+/* minimal account switcher */
+
+div[data-testid="SideNav_AccountSwitcher_Button"] > div:nth-child(2),
+div[data-testid="SideNav_AccountSwitcher_Button"] > div:nth-child(3) { opacity:0; transition:0.5s cubic-bezier(0.2,0.8,0.2,1); }
+div[data-testid="SideNav_AccountSwitcher_Button"]:hover > div:nth-child(2),
+div[data-testid="SideNav_AccountSwitcher_Button"]:hover > div:nth-child(3) { opacity:1; }
 
 /* uncrop images */
 
@@ -88,7 +135,7 @@ max-height:90vh!important;
 background-size:contain!important;
 object-fit:contain!important; }
 
-a.css-4rbku5 .r-1adg3ll .r-13qz1uu [style*="background-image: url"] {
+a.css-4rbku5 .r-1adg3ll .r-13qz1uu [style*="background-image:url"] {
 position:absolute!important;
 width:100%;
 max-width:100%;
