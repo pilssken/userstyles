@@ -110,6 +110,7 @@ header[role="banner"] { align-items:start!important; max-width:100px!important; 
 header[role="banner"] > div > div > div { justify-content:space-evenly; padding-top:6px; }
 nav[aria-label="Primary"][role="navigation"] > a > div > div:nth-child(2), nav[aria-label="Primary"][role="navigation"] > div > div > div:nth-child(2) { opacity:0!important; transition:0.5s cubic-bezier(0.2, 0.8, 0.2, 1); }
 nav[aria-label="Primary"][role="navigation"]:hover > a > div > div:nth-child(2), nav[aria-label="Primary"][role="navigation"]:hover > div > div > div:nth-child(2) { opacity:1!important; }
+.r-obd0qt { align-items:flex-end!important; }
 
 /* minimal account switcher */
 
